@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap");
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin-top: 0px;
+}
+
+:root {
+
+  /* ### Primary */
+
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  
+  /* ### Neutral */
+  
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+  
+  --weight-light: 500;
+  --weight-normal: 700;
+  --weight-heavy: 900;
+}
+
+body {
+  background-color: var(--pale-blue);
+  font-family: 'Red Hat Display', sans-serif;
+  background-image: url(../images/pattern-background-desktop.svg);
+  background-repeat: repeat-x;
+  font-size: 16px;
+}
+
+/* GROSOR */
+.fw-light {
+  font-weight: var(--weight-light);
+}
+.fw-normal {
+  font-weight: var(--weight-normal);
+}
+
+.fw-heavy {
+  font-weight: var(--weight-heavy);
+}
+
+#main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+
+@media (min-width: 320px) and (max-width: 376px) {
+  body{
+    background-image: url(../images/pattern-background-mobile.svg);
+    background-repeat: repeat-x;
+  }
+}
