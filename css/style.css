@@ -1,105 +1,66 @@
 .card {
   background: white;
   border-radius: 15px;
-  max-width: 450px;
+  width: 410px;
+  height: 450px;
 }
 .card-header {
-  background: rgba(173, 216, 230, 0);
-}
-.card-img {
+  background-image: url(../images/bg-pattern-card.svg);
+  /* background-size: 100px 100px; */
+  object-fit: cover;
+  height: 165px;
   border-radius: 15px 15px 0px 0px;
-  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.profile {
+  width: 110px;
+  position: absolute;
+  bottom: -60px;
+  border-radius: 50%;
+  border: white 5px solid;
 }
 .card-body {
-  padding: 0px 50px 0px 50px;
-}
-.card-title {
-  background: rgba(173, 216, 230, 0);
-}
-.card-info {
-  color: var(--desaturated-blue);
-}
-/* BOX PLAN */
-.box-plan {
-  background: var(--very-pale-blue);
-  border-radius: 15px;
-  display: flex;
-  padding: 20px 20px 20px 20px;
-  gap: 20px;
-}
-.plan {
-  text-align: start;
+  padding: 70px 50px 0px 50px;
+  height: 100px;
+  max-height: 140px;
+  font-size: 20px;
 }
 
-/* .icon {
-  background: rgba(173, 216, 230, 0);
-} */
-
-.plan > span {
-  font-weight: var(--weight-heavy);
+h1 {
+  font-size: 20px !important;
+}
+.age {
+  margin-left: 10px;
+  font-weight: 400;
 }
 
-.change {
-  color: var(--bright-blue);
-  text-decoration: underline;
-  font-weight: var(--weight-normal);
-}
-
-/* FOOTER OF CARD */
 .card-footer {
-  padding: 30px 50px 30px 50px;
+  display: flex;
+  border-top: 1px solid var(--dark-grayish-blue);
+  justify-self: center;
+  height: 85px;
+  padding: 20px 20px;
 }
-.btn {
-  background: var(--bright-blue);
-  width: 100%;
-  border-radius: 10px;
-  padding: 15px;
-  color: white;
-  font-weight: var(--weight-heavy);
-  box-shadow: 0px 11px 37px #847ce4;
-
-}
-.cancel {
-  background: rgba(173, 216, 230, 0);
-  color: var(--dark-blue);
-  font-weight: var(--weight-normal);
+.footer-grid {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 120px 120px 120px;
 }
 
-.btn:hover{
-    background-color: var(--bright-blue);
-    opacity: 0.8;
+.number {
+  font-weight: 700;
+  font-size: 20px;
 }
-
-.change:hover{
-    text-decoration: none;
-    color: var(--bright-blue);
-    opacity: 0.6;
-
-}
-
-
-.cancel,
-.change,
-.btn:hover {
-  cursor: pointer;
-}
-
-
 
 @media (min-width: 320px) and (max-width: 460px) {
-   .card{
-    width: 375px;
-   }
-   .card-body{
-    padding: 0px 30px 0px 30px;
-   }
-
-   .card-info{
-    padding-left: 20px;
-    padding-right: 20px;
-   }
-   .btn{
-    font-weight: var(--weight-heavy);
-   }
+  .card {
+    width: 350px;
   }
-  
+
+  .footer-grid {
+    grid-template-columns: 105px 105px 105px;
+  }
+}
